@@ -44,7 +44,7 @@ function update_carrito(carrito) {
     if (Object.entries(carrito).length == 0) {
         carrito_elem.classList.add('d-none');
         if (subtotal_elem) {
-            subtotal_elem.textContent = 'Q 0.00';
+            subtotal_elem.textContent = '$CLP 0.0';
         }
     } else {
         items = 0;
@@ -58,7 +58,7 @@ function update_carrito(carrito) {
         carrito_elem.classList.remove('d-none');
         carrito_elem.textContent = items;
         if (subtotal_elem) {
-            subtotal_elem.textContent = 'Q ' + subtotal.toFixed(2);
+            subtotal_elem.textContent = '$CLP ' + subtotal.toFixed(2);
         }
     }
 }

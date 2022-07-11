@@ -23,14 +23,14 @@
         <input type="number" step=0.01 class="form-control {% if form.precio.errors %}is-invalid{% endif %}"
         oninput="remove_class('precio', 'is-invalid');" id="precio" name="precio" onchange="formatear_con_decimales('precio')"
         value='{{ producto.precio }}' required>
-        <label for="precio">Precio de venta (Q)</label>
+        <label for="precio">Precio de venta ($CLP)</label>
         <div class="form-text invalid-feedback">{{ form.precio.errors }}</div>
     </div>
     <div class="form-floating mb-2">
         <input type="number" step=0.01 class="form-control {% if form.precio_pedido.errors %}is-invalid{% endif %}"
         oninput="remove_class('precio_pedido', 'is-invalid');" id="precio_pedido" name="precio_pedido" onchange="formatear_con_decimales('precio_pedido')"
         value='{{ producto.precio_pedido }}' required>
-        <label for="precio_pedido">Precio de compra (Q)</label>
+        <label for="precio_pedido">Precio de compra ($CLP)</label>
         <div class="form-text invalid-feedback">{{ form.precio_pedido.errors }}</div>
     </div>
     <div class="form-floating mb-2">
