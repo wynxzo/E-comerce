@@ -25,7 +25,8 @@
     {% else %}
     <p><strong>Seleccione una fábrica</strong></p>
     <div class="row pt-2">
-        {% for fabrica in fabricas %}
+        {% if fabricas %}
+            {% for fabrica in fabricas %}
         <div class="col-sm-6 col-md-4 text-center py-2">
             <div class="card">
                 <p class="pt-2">{{ fabrica.nombre }}</p>
@@ -35,7 +36,8 @@
                 </a>
             </div>
         </div>
-        {% endfor %}
+            {% endfor %}
+        {% endif %}
     </div>
     <div class="d-grid gap-2 mt-3">
         <a href="/administracion/pedidos/" class="btn btn-lg btn-danger">Cancelar</a>

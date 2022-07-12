@@ -2,4 +2,4 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
-*.sqlite[3]
+*.sqlite

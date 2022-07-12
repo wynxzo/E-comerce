@@ -266,6 +266,8 @@ def registrar_pedido(request, fabrica=None):
                 messages.error(request, 'Debe ingresar al menos una unidad para crear el pedido. Ingrese el pedido nuevamente.', extra_tags='danger')
         except Exception:
             messages.error(request, 'Hubo un problema al procesar el pedido. Ingrese el pedido nuevamente.', extra_tags='danger')
+        
+    print(f)
     context = {
         'section': 'pedidos.registrar',
         'fabricas': f,
