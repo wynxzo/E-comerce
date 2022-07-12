@@ -15,6 +15,9 @@ def productos(request):
 def destacados(request):
     return render(request, 'tienda/destacados.html')
 
+def fundaciones(request):
+    return render(request, 'tienda/fundaciones.html')
+
 def contacto(request):
     return render(request, 'tienda/contacto.html')
 

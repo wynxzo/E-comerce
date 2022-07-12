@@ -27,8 +27,8 @@
                     {% endif %}
                 </div>
                 <div class="pb-3">
-                    <a href="/tienda/producto/{{ product.id }}" class="btn btn-primary">Ver detalles</a>
-                    <button type="button" class="btn btn-warning" onclick="add_to_carrito({{ product.id }});" {% if product.unidades == 0 %}disabled{% endif %}>Añadir al carrito</button>
+                    <a href="/tienda/producto/{{ product.id }}" style="background-color: #20ae00; color:white;" class="btn btn-light">ver detalles</a>
+                    <button type="button" class="btn btn-light" style="background-color:#b88700; color:white;" onclick="add_to_carrito({{ product.id }});" {% if product.unidades == 0 %}disabled{% endif %}>añadir al carro</button>
                 </div>
             </div>
         </div>

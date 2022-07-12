@@ -1,55 +1,47 @@
+.text-voilet {color : #20ae00;}
+.home-area {
+    height: 800px;
+    z-index: 1;
+}
+.bg-voilet {
+    background: #20ae00;
+}
+.home-thumb {
+    max-width: 300px;
+    padding-top: 70px;
+}
+.bg-overlay, .overlay-dark {
+    position: relative;
+    z-index: 0;
+}
 
-@media only screen and (max-width: 100%) {
-  #navbarTogglerDemo02 {
-    position: fixed;
-    top: 0;
-    left: 15px;
-    z-index: 99;
-    width: 280px;
-    height: 100%;
-    background-color: #ddd;
-    overflow: auto;
-  }
-  .menu-overlay {
-    display: none;
-    background-color: #000;
-    bottom: 0;
+* {
+    margin: 0;
+    padding: 0;
+}
+.fw-3 {
+    font-weight: 300;
+}
+.home-area .shape-bottom {
+    z-index: -1;
+}
+.shape-bottom {
+    position: absolute;
+    top: auto;
+    bottom: -7px;
     left: 0;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-    /* IE7 & 8 */
-    position: fixed;
     right: 0;
-    top: 0;
-    z-index: 49;
-  }
-
+}
+.button-group {
+    margin-top: 30px;
+}
+.store-buttons img {
+    max-width: 190px;
 }
 
-.div-img {width:50%; transform: rotate(30deg); }
-
-.welcome-layer-3 {
-    height: 100%;
-    /* left: 0; */
-    position: absolute;
-    top: 0;
-    width: 100%;
+.store-buttons a {
+    text-align: left;
 }
-.home3-layer-1 {
-    right: 10%;
-    top: -18%;
-}
-.welcome-layer-3 > div {
-    position: absolute;
-}
-
-
-
-.bg-1 {
- background-image: url("http://quomodosoft.com/html/applic/applic/assets/img/background/green_bg.png");
- background-color: #cccccc;
-}
-.bg-2 {
- background-image: url("http://quomodosoft.com/html/applic/applic/assets/img/bg-layers/map-layer.png");
- background-color: #cccccc;
+.button-group a {
+    margin-right: 10px;
 }

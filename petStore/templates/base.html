@@ -27,10 +27,11 @@
                         <li class="nav-item">
                             <a class="nav-link fg-store" href="/">Inicio </a> 
                         </li>
+
                         <li class="nav-item">
-                    
                         </li>
-                        <li class="nav-item">
+                        
+                        <li class="nav-item ">
                             <a class="nav-link fg-store" href="/tienda/destacados/">Destacados</a> 
                         </li>
                         <li class="nav-item">
@@ -39,12 +40,20 @@
                         <li class="nav-item">
                             <a class="nav-link fg-store" href="/tienda/proveedores/">Proveedores</a> 
                         </li>
+
                         <li class="nav-item">
-                        
                         </li>
                         <li class="nav-item strong">
                             <a class="nav-link fg-store" href="/tienda/">Productos</a>
                         </li>
+                        <li class="nav-item">
+                        </li>
+                        <li class="nav-item strong">
+                            <a class="nav-link fg-store" href="/tienda/fundaciones/">Fundaciones</a>
+                        </li>
+
+
+
                         <li class="nav-item dropdown">
                             <a class="nav-link fg-store dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
@@ -55,10 +64,9 @@
                                 {% if request.user.is_authenticated %}
                                 <li><strong class="dropdown-item disabled">Hola {{ request.user.first_name }}!</strong></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="/perfil/">Ver mi perfil</a></li>
-                                <li><a class="dropdown-item" href="/salir/">Salir de mi cuenta</a></li>
+                                <li><a class="dropdown-item" href="/perfil/">Mi perfil</a></li>
+                                <li><a class="dropdown-item" href="/salir/">Salir de la cuenta</a></li>
                                 {% else %}
-                                <li><strong class="dropdown-item disabled">¿Qué deseas hacer?</strong></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="/acceder/">Acceder a mi cuenta</a></li>
                                 <li><a class="dropdown-item" href="/registrar/">Registrar cuenta</a></li>
@@ -106,7 +114,7 @@
                 <li class="nav-item"><a href="/tienda/proveedores" class="nav-link px-2 text-muted">Proveedores</a></li>
                 <li class="nav-item"><a href="/tienda/contacto/" class="nav-link px-2 text-muted">Contacto</a></li>
               </ul>
-              <p class="text-center text-muted">Derechos Reservados &copy; P&S 2022. | Hecho con &#10084; por David&#x1F47D; , Yoselin&#x1F9D9; & Liza&#x1F36D; </p>
+              <p class="text-center text-muted">Derechos Reservados &copy; P&S 2022. | Hecho con &#10084; por David, Yoselin & Liza. </p>
             </footer>
           </div>
 
