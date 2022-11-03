@@ -11,15 +11,28 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Instalar python_
 
 ```
-Da un ejemplo
+desde la página oficial
+ $pip install virtualenv
+ # python -m venv nombre-entorno 
+ $ .\nombre-entorno\Scripts\activate
+ # Install modules - SQLite Storag 
+ pip3 install -r requirements.txt
+
+ $ python manage.py makemigrations 
+ $ python manage.py migrate $ 
+ $ # Create app superuser 
+ $ python manage.py createsuperuser $ $ # Start the application (development mode) $ 
+ 
+ python manage.py runserver 
+ 
 ```
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Para levantar el_
 
 _Dí cómo será ese paso_
 
